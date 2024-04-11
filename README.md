@@ -1,6 +1,15 @@
 # Text Gradiate Package
 
-A Flutter package for creating gradient text in fastest way.
+![Version Badge](https://img.shields.io/pub/v/text_gradiate?color=green)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![GitHub repo](https://img.shields.io/badge/GitHub-purple?logo=github)](https://github.com/Ruban-07/text_gradiate)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/ruban-raghavendar-k/)
+[![Gmail](https://img.shields.io/badge/Gmail-Send%20Email-red?style=flat-square&logo=gmail)](mailto:rubanraghavendar@gmail.com)
+
+[![Android](https://img.shields.io/badge/Android-Supported-brightgreen)](https://developer.android.com/)
+[![iOS](https://img.shields.io/badge/iOS-Supported-brightgreen)](https://developer.apple.com/ios/)
+
+A Flutter package for creating gradient text in an fastest way. This package allows you to add gradient effected text in your Flutter app effortlessly.
 
 ## Features
 
