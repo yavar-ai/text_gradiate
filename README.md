@@ -14,7 +14,8 @@ A Flutter package for creating gradient text in an fastest way. This package all
 ## Features
 
 - Easily create text with gradient colors.
-- Customize gradient colors to match your design.
+- Customize gradient colors and types, including linear, radial, or sweep gradients.
+- Control various gradient properties such as starting and ending points, tiling strategy, center and focal points, focal radius, angles, stops, and transform matrix.
 
 ## Installation
 
@@ -22,7 +23,7 @@ To use this package, add `text_gradiate` as a dependency in your `pubspec.yaml` 
 
 ```yaml
 dependencies:
-  text_gradiate: ^1.0.0
+  text_gradiate: ^0.1.0
 ```
 
 Then, import the package into your Dart code:
@@ -33,7 +34,7 @@ import 'package:text_gradiate/text_gradiate.dart';
 
 ## Usage
 
-Wrap your text widget with `TextGradiate` and specify the desired gradient colors.
+Wrap your text widget with `TextGradiate` and specify the desired gradient properties.
 
 ```dart
 TextGradiate(
@@ -42,12 +43,16 @@ TextGradiate(
     style: TextStyle(fontSize: 24.0),
   ),
   colors: [Colors.blue, Colors.green],
+  gradientType: GradientType.linear,
+  begin: Alignment.centerLeft,
+  end: Alignment.centerRight,
+  tileMode: TileMode.clamp,
 )
 ```
 
 ## Example
 
-Here's a simple example that shows how to use the `TextGradiate` widget:
+Here's a simple example that shows how to use the `TextGradiate` widget with some properties:
 
 ```dart
 import 'package:flutter/material.dart';
@@ -72,12 +77,58 @@ class MyApp extends StatelessWidget {
               style: TextStyle(fontSize: 24.0),
             ),
             colors: [Colors.blue, Colors.green],
+            gradientType: GradientType.linear,
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+            tileMode: TileMode.clamp,
           ),
         ),
       ),
     );
   }
 }
+```
+
+## Properties Usage
+
+- `text`: The child widget to which the gradient effect will be applied.
+
+- `colors`: The list of colors to use for the gradient.
+
+- `gradientType`: Specifies the type of gradient (`linear`, `radial`, or `sweep`).
+
+- `begin` (for linear gradients): The starting point of the gradient.
+
+- `end` (for linear gradients): The ending point of the gradient.
+
+- `tileMode` (for linear gradients): The tiling strategy for the gradient.
+
+- `center` (for radial and sweep gradients): The center point of the gradient.
+
+- `focal` (for radial gradients): The focal point of the gradient.
+
+- `focalRadius` (for radial gradients): The focal radius of the gradient.
+
+- `startAngle` (for sweep gradients): The starting angle of the gradient.
+
+- `endAngle` (for sweep gradients): The ending angle of the gradient.
+
+- `stops`: The stops of the gradient.
+
+- `transform`: The transform matrix for the gradient (applicable only for linear and sweep gradients).
+
+```dart
+TextGradiate(
+  text: Text(
+    'Hello, Gradient!',
+    style: TextStyle(fontSize: 24.0),
+  ),
+  colors: [Colors.blue, Colors.green],
+  gradientType: GradientType.linear,
+  begin: Alignment.centerLeft,
+  end: Alignment.centerRight,
+  tileMode: TileMode.clamp,
+)
 ```
 
 ## Support

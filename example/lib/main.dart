@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('GradientText Example'),
+            title: const Text('TextGradiate Example'),
           ),
           body: const Center(
             child: Column(
@@ -24,6 +24,10 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(fontSize: 24.0),
                   ),
                   colors: [Colors.blue, Colors.green],
+                  gradientType: GradientType.linear,
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                  tileMode: TileMode.clamp,
                 ),
                 SizedBox(height: 20),
                 TextGradiate(
@@ -32,6 +36,10 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(fontSize: 24.0),
                   ),
                   colors: [Colors.red, Colors.orange],
+                  gradientType: GradientType.linear,
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                  tileMode: TileMode.clamp,
                 ),
               ],
             ),
