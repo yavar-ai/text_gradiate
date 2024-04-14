@@ -19,11 +19,11 @@ A Flutter package for creating gradient text in an fastest way. This package all
 
 ## Screenshots
 
-<p float="left">
+<div float="left">
   <img src="assets/images/samp1.jpg" width="300" />
   <img src="assets/images/samp2.jpg" width="300" />
   <img src="assets/images/samp3.jpg" width="300" />
-</p>
+</div>
 
 ## Installation
 
@@ -31,7 +31,7 @@ To use this package, add `text_gradiate` as a dependency in your `pubspec.yaml` 
 
 ```yaml
 dependencies:
-  text_gradiate: ^0.1.1
+  text_gradiate: ^0.1.2
 ```
 
 Then, import the package into your Dart code:

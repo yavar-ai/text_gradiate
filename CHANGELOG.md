@@ -1,3 +1,7 @@
+## 0.1.2
+
+- Added a screenshot showcasing the usage of the TextGradiate widget in div.
+
 ## 0.1.1
 
 - Added a screenshot showcasing the usage of the TextGradiate widget.
