@@ -17,13 +17,21 @@ A Flutter package for creating gradient text in an fastest way. This package all
 - Customize gradient colors and types, including linear, radial, or sweep gradients.
 - Control various gradient properties such as starting and ending points, tiling strategy, center and focal points, focal radius, angles, stops, and transform matrix.
 
+## Screenshots
+
+<p float="left">
+  <img src="assets/images/samp1.jpg" width="300" />
+  <img src="assets/images/samp2.jpg" width="300" />
+  <img src="assets/images/samp3.jpg" width="300" />
+</p>
+
 ## Installation
 
 To use this package, add `text_gradiate` as a dependency in your `pubspec.yaml` file.
 
 ```yaml
 dependencies:
-  text_gradiate: ^0.1.0
+  text_gradiate: ^0.1.1
 ```
 
 Then, import the package into your Dart code:

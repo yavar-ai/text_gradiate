@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Added a screenshot showcasing the usage of the TextGradiate widget.
+
 ## 0.1.0
 
 - Added support for customizing gradient colors and types.
