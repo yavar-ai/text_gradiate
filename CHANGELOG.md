@@ -1,3 +1,7 @@
+## 0.1.3
+
+- Added the github deployed image for screenshot.
+
 ## 0.1.2
 
 - Added a screenshot showcasing the usage of the TextGradiate widget in div.
