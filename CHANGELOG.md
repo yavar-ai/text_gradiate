@@ -1,3 +1,7 @@
+## 0.1.4
+
+- Dart version extended from "3.0.0" to "4.0.0"
+
 ## 0.1.3
 
 - Added the github deployed image for screenshot.
