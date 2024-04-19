@@ -85,22 +85,32 @@ class TextGradiate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Shader shader;
-
-    switch (gradientType) {
-      case GradientType.linear:
-        shader = LinearGradient(
+    if (gradientType == GradientType.linear) {
+      // Apply linear gradient shader mask
+      return ShaderMask(
+        blendMode: BlendMode.srcIn,
+        shaderCallback: (final Rect bounds) => LinearGradient(
           colors: colors,
           begin: begin,
           end: end,
           tileMode: tileMode,
           stops: stops,
           transform: transform,
-        ).createShader(const Rect.fromLTRB(
-            0, 0, 200, 200)); // Adjust the rectangle size as needed
-        break;
-      case GradientType.radial:
-        shader = RadialGradient(
+        ).createShader(
+          Rect.fromLTWH(
+            0,
+            0,
+            bounds.width,
+            bounds.height,
+          ),
+        ),
+        child: text,
+      );
+    } else if (gradientType == GradientType.radial) {
+      // Apply radial gradient shader mask
+      return ShaderMask(
+        blendMode: BlendMode.srcIn,
+        shaderCallback: (final Rect bounds) => RadialGradient(
           colors: colors,
           center: center,
           radius: 1.0,
@@ -109,26 +119,37 @@ class TextGradiate extends StatelessWidget {
           focalRadius: focalRadius,
           stops: stops,
           transform: transform,
-        ).createShader(const Rect.fromLTRB(
-            0, 0, 200, 200)); // Adjust the rectangle size as needed
-        break;
-      case GradientType.sweep:
-        shader = SweepGradient(
+        ).createShader(
+          Rect.fromLTWH(
+            0,
+            0,
+            bounds.width,
+            bounds.height,
+          ),
+        ),
+        child: text,
+      );
+    } else {
+      // Apply sweep gradient shader mask
+      return ShaderMask(
+        blendMode: BlendMode.srcIn,
+        shaderCallback: (final Rect bounds) => SweepGradient(
           colors: colors,
           center: center,
           startAngle: startAngle,
           endAngle: endAngle,
           stops: stops,
           transform: transform,
-        ).createShader(const Rect.fromLTRB(
-            0, 0, 200, 200)); // Adjust the rectangle size as needed
-        break;
+        ).createShader(
+          Rect.fromLTWH(
+            0,
+            0,
+            bounds.width,
+            bounds.height,
+          ),
+        ),
+        child: text,
+      );
     }
-
-    return ShaderMask(
-      blendMode: BlendMode.srcIn,
-      shaderCallback: (Rect bounds) => shader,
-      child: text,
-    );
   }
 }

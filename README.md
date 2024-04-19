@@ -1,4 +1,4 @@
-# Text Gradiate Package
+# Text Gradiate 👉🏻 For Colorful Texts
 
 ![Version Badge](https://img.shields.io/pub/v/text_gradiate?color=green)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
@@ -11,13 +11,13 @@
 
 A Flutter package for creating gradient text in an fastest way. This package allows you to add gradient effected text in your Flutter app effortlessly.
 
-## Features
+## Features🌈
 
 - Easily create text with gradient colors.
 - Customize gradient colors and types, including linear, radial, or sweep gradients.
 - Control various gradient properties such as starting and ending points, tiling strategy, center and focal points, focal radius, angles, stops, and transform matrix.
 
-## Screenshots
+## Screenshots📸
 
 <div>
   <img src="https://ruban-07.github.io/text_gradiate/assets/images/samp1.jpg" width="300" />
@@ -25,13 +25,13 @@ A Flutter package for creating gradient text in an fastest way. This package all
   <img src="https://ruban-07.github.io/text_gradiate/assets/images/samp3.jpg" width="300" />
 </div>
 
-## Installation
+## Installation📦
 
 To use this package, add `text_gradiate` as a dependency in your `pubspec.yaml` file.
 
 ```yaml
 dependencies:
-  text_gradiate: ^0.1.4
+  text_gradiate: ^1.0.0
 ```
 
 Then, import the package into your Dart code:
@@ -40,7 +40,7 @@ Then, import the package into your Dart code:
 import 'package:text_gradiate/text_gradiate.dart';
 ```
 
-## Usage
+## Usage🛠️
 
 Wrap your text widget with `TextGradiate` and specify the desired gradient properties.
 
@@ -58,7 +58,7 @@ TextGradiate(
 )
 ```
 
-## Example
+## Example🫣
 
 Here's a simple example that shows how to use the `TextGradiate` widget with some properties:
 
@@ -97,7 +97,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-## Properties Usage
+## Properties Usage🫧
 
 - `text`: The child widget to which the gradient effect will be applied.
 
@@ -139,7 +139,7 @@ TextGradiate(
 )
 ```
 
-## Support
+## Support❤️
 
 - Android: Supported on SDK 16 and above.
 - iOS: Supported on iOS 11.0 and above.
