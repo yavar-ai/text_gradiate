@@ -31,7 +31,7 @@ To use this package, add `text_gradiate` as a dependency in your `pubspec.yaml` 
 
 ```yaml
 dependencies:
-  text_gradiate: ^1.0.0
+  text_gradiate: ^1.0.1
 ```
 
 Then, import the package into your Dart code:

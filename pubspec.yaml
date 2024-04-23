@@ -4,9 +4,9 @@ description: |
   A Flutter package for creating gradient text in an easy way.
   This package allows you to add gradient effects to text in your Flutter app effortlessly.
 
-version: 1.0.0
+version: 1.0.1
 
-homepage: https://github.com/Ruban-07/text_gradiate
+homepage: https://github.com/yavar-registry/text_gradiate.git
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
